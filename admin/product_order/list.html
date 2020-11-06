@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>주문관리</title>
 </head>
+
 <body>
     <header>
-
+        <h1>헤더</h1>
     </header>
-    <main>
-        <h1>주문관리</h1>
-        <div>
-            <h2>미입금 확인</h2>
+    <section>
+        <main>
+            <h1>주문관리</h1>
+            <section>
+                <h1>미입금 확인</h1>
                 <table border="1">
                     <!-- 첫번째 줄 시작-->
-                    <tr>    
-                        <td>기간</td>
+                    <tr>
+                        <th>기간</th>
                         <td>
                             <input type="date">~<input type="date">
                             <button>오늘</button>
                             <button>일주일</button>
                             <button>한달</button>
                         </td>
-                        <td>현금영수증</td>
+                        <th>현금영수증</th>
                         <td>
                             <input type="checkbox">신청
                         </td>
+                        <td rowspan="4">검색</td>
                     </tr>
                     <!-- 첫번째 줄 끝 -->
                     <!-- 두번째 줄 시작 -->
                     <tr>
-                        <td>통합검색</td>
+                        <th>통합검색</th>
                         <td>
                             <input type="text">
                         </td>
-                        <td>상품명</td>
+                        <th>상품명</th>
                         <td>
                             <input type="text">
                         </td>
@@ -43,7 +47,7 @@
                     <!-- 두번째 줄 끝 -->
                     <!-- 세번째 줄 시작 -->
                     <tr>
-                        <td>결제방식</td>
+                        <th>결제방식</th>
                         <td>
                             <select>
                                 <option>--선택--</option>
@@ -52,7 +56,7 @@
                                 <option>휴대폰결제</option>
                             </select>
                         </td>
-                        <td>주문상태</td>
+                        <th>주문상태</th>
                         <td>
                             <select>
                                 <option>미입금</option>
@@ -63,7 +67,7 @@
                     <!-- 세번째 줄 끝 -->
                     <!-- 네번째 줄 시작 -->
                     <tr>
-                        <td>정렬</td>
+                        <th>정렬</th>
                         <td>
                             <select>
                                 <option>--선택--</option>
@@ -76,74 +80,79 @@
                                 <option>--선택--</option>
                                 <option>오름차순</option>
                                 <option>내림차순</option>
-                            </select>    
+                            </select>
                         </td>
-                        <td>목록갯수</td>
+                        <th>목록갯수</th>
                         <td>
                             <select value="--선택--">
                                 <option>--선택--</option>
                                 <option>5개씩 보기</option>
                                 <option>10개씩 보기</option>
-                            </select>    
+                            </select>
                         </td>
-                        <td>검색</td>
                     </tr>
                     <!-- 네번째 줄 끝 -->
                 </table>
-        </div>
-        <div>
-            <h2>주문 내역</h2>
-            <ul>
-                <li>총 주문건수 : 7개</li>
-                <li><button>미입금 SMS발송</button></li>
-                <li><button>선택주문취소</button></li>
-                <li>
-                    <select>
-                        <option>--주문상태 선택변경</option>
-                        <option>미입금</option>
-                        <option>입금완료</option>
-                    </select>
-                    <button>선택변경하기</button>
-                </li>
-            </ul>
-            <table border="1">
-                <tr>
-                    <td><input type="checkbox" name="" id=""></td>
-                    <td>번호</td>
-                    <td>주문번호</td>
-                    <td>주문일</td>
-                    <td>입금일</td>
-                    <td>주문자</td>
-                    <td>주문자핸드폰</td>
-                    <td>상품정보(간략)</td>
-                    <td>결제금액</td>
-                    <td>결제방법<br>입금자명</td>
-                    <td>주문상태</td>
-                    <td>관리</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="" id=""></td>
-                    <td>1</td>
-                    <td>23345A53561D</td>
-                    <td>2015-12-02 20:08</td>
-                    <td>    </td>
-                    <td>이수철</td>
-                    <td>010-1234-5678</td>
-                    <td>[빈폴] 빈폴1988 맨투맨/셔츠</td>
-                    <td>329,000원</td>
-                    <td>무통장<br>입금자명</td>
-                    <td>미입금</td>
-                    <td>
-                        <button>입금확인</button>
-                        <button>상세보기</button>
-                        <button>주문취소</button>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </main>
+            </section>
+            <section>
+                <h1>주문 내역</h1>
+                <ul>
+                    <li>총 주문건수 : 7개</li>
+                    <li><button>미입금 SMS발송</button></li>
+                    <li><button>선택주문취소</button></li>
+                    <li>
+                        <select>
+                            <option>--주문상태 선택변경</option>
+                            <option>미입금</option>
+                            <option>입금완료</option>
+                        </select>
+                        <button>선택변경하기</button>
+                    </li>
+                </ul>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" name="" id=""></th>
+                            <th>번호</th>
+                            <th>주문번호</th>
+                            <th>주문일</th>
+                            <th>입금일</th>
+                            <th>주문자</th>
+                            <th>주문자핸드폰</th>
+                            <th>상품정보(간략)</th>
+                            <th>결제금액</th>
+                            <th>결제방법<br>입금자명</th>
+                            <th>주문상태</th>
+                            <th>관리</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>1</td>
+                        <td>23345A53561D</td>
+                        <td>2015-12-02 20:08</td>
+                        <td> </td>
+                        <td>이수철</td>
+                        <td>010-1234-5678</td>
+                        <td>[빈폴] 빈폴1988 맨투맨/셔츠</td>
+                        <td>329,000원</td>
+                        <td>무통장<br>입금자명</td>
+                        <td>미입금</td>
+                        <td>
+                            <button>입금확인</button>
+                            <button>상세보기</button>
+                            <button>주문취소</button>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+            </section>
+        </main>
+    </section>
     <footer>
 
     </footer>
 </body>
+
 </html>
