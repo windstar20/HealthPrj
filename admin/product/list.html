@@ -40,6 +40,7 @@
             </section>
             <section>
                 <h1>상품목록</h1>
+                <form action="">
                 <table border="1">
                     <thead>
                         <tr>
@@ -66,11 +67,11 @@
                             </td>
                             <td>14.12.17 18:01</td>
                             <td>
-                                <input type="text">
+                                <input type="text" name="price">
                             </td>
                             <td>옵션별</td>
                             <td>
-                                <input type="checkbox">
+                                <input type="checkbox" name="display">
                             </td>
                             <td>
                                 <button>복사</button>
@@ -84,6 +85,8 @@
                         </tr>
                     </tbody>
                 </table>
+                <input type="submit" value="상품등록">
+            </form>
             </section>
             <button>체크상품 수정</button>
             <button>체크상품 삭제</button>
@@ -97,7 +100,6 @@
                 <button>다음</button>
             </section>
 
-            <button>상품등록</button>
         </main>
     </section>
     <footer>
