@@ -1,0 +1,15 @@
+h1 {
+  display: none;
+}
+.logo_bar {
+  background-color: khaki;
+  display: flex;
+}
+.header > nav > ul {
+  background-color: lawngreen;
+  display: flex;
+}
+
+.header > nav > ul > li {
+  width: calc(100% / 6);
+}
