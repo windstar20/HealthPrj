@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>가죽바지</title>
     <link rel="stylesheet" href="../../CSS/reset.css" />
     <link rel="stylesheet" href="../../CSS/admin.css" />
   </head>
-
   <body>
     <header id="header" class="header">
       <div class="logo_bar">
-        <h1>근처</h1>
+        <h1 class="no_display">근처</h1>
+        <a href=""><div class="logo"></div></a>
         <ul>
-          <li><button>로그아웃</button></li>
+          <li><button class="logout">로그아웃</button></li>
         </ul>
       </div>
       <nav id="nav" class="nav">
-        <h1>메뉴</h1>
+        <h1 class="no_display">메뉴</h1>
         <ul>
           <li><a href="#">기본설정</a></li>
           <li><a href="#">상품관리</a></li>
@@ -29,96 +29,135 @@
       </nav>
     </header>
 
-    <section id="body" class="body">
-      <main>
-        <h1>상품 리스트</h1>
-        <section>
-          <h1>상품 옵션</h1>
-          <form>
+    <div id="body" class="body">
+      <aside class="aside">
+        <h1 class="aside_title">ASIDE</h1>
+        <ul class="aside_menu">
+          <li>상품등록 관리</li>
+          <ul>
+            <li><a href="">상품 리스트</a></li>
+            <li><a href="">상품 등록</a></li>
+            <li><a href="">상품 재고관리</a></li>
+          </ul>
+          <br />
+          <li>상품 일괄 관리</li>
+          <ul>
+            <li><a href="">일반정보 일괄 수정</a></li>
+            <li><a href="">가격 일괄 수정</a></li>
+            <li><a href="">옵션정보 일괄 수정</a></li>
+            <li><a href="">할인가 일괄 수정</a></li>
+            <li><a href="">적립금 일괄 수정</a></li>
+            <li><a href="">배송비 일괄 수정</a></li>
+            <li><a href="">단위판매 일괄 수정</a></li>
+            <li><a href="">상품 이동/복사/삭제</a></li>
+            <li><a href="">이벤트 아이콘 일괄 수정</a></li>
+          </ul>
+          <br />
+          <li>상품 진열 관리</li>
+          <ul>
+            <li><a href="">메인상품 진열</a></li>
+            <li><a href="">일반상품 진열</a></li>
+            <li><a href="">분류별 추천상품 진열</a></li>
+            <li><a href="">관련상품 진열</a></li>
+          </ul>
+          <br />
+        </ul>
+      </aside>
+      <section class="main_section">
+        <div class="main_title">
+          <h1>상품 리스트</h1>
+          <span> home > 상품관리 > 상품리스트 </span>
+        </div>
+        <main id="main" class="main">
+          <h1>상품 리스트</h1>
+          <section>
+            <h1>상품 옵션</h1>
+            <form>
+              <ul>
+                <li>검색결과 : 19건</li>
+                <li>전체상품(중복진열상품제외) : 19건</li>
+                <li>안전재고 이하(부족) : 3건</li>
+              </ul>
+              <select>
+                <option>5개 출력</option>
+                <option>10개 출력</option>
+                <option>20개 출력</option>
+              </select>
+            </form>
+          </section>
+          <section>
+            <h1>정렬</h1>
             <ul>
-              <li>검색결과 : 19건</li>
-              <li>전체상품(중복진열상품제외) : 19건</li>
-              <li>안전재고 이하(부족) : 3건</li>
+              <li>등록일</li>
+              <li>상품명</li>
+              <li>가격</li>
             </ul>
-            <select>
-              <option>5개 출력</option>
-              <option>10개 출력</option>
-              <option>20개 출력</option>
-            </select>
-          </form>
-        </section>
-        <section>
-          <h1>정렬</h1>
-          <ul>
-            <li>등록일</li>
-            <li>상품명</li>
-            <li>가격</li>
-          </ul>
-          <button>초기화</button>
-        </section>
-        <section>
-          <h1>상품목록</h1>
-          <form action="">
-            <table border="1">
-              <thead>
-                <tr>
-                  <td>번호</td>
-                  <td>상품명(상품분류, 상품코드, 관리코드)</td>
-                  <td>등록일</td>
-                  <td>가격</td>
-                  <td>재고</td>
-                  <td>진열</td>
-                  <td>복사</td>
-                  <td>수정</td>
-                  <td>삭제</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    <ul>
-                      <li>아이템</li>
-                      <li>G54914655B7634</li>
-                      <li>장갑</li>
-                    </ul>
-                  </td>
-                  <td>14.12.17 18:01</td>
-                  <td>
-                    <input type="text" name="price" />
-                  </td>
-                  <td>옵션별</td>
-                  <td>
-                    <input type="checkbox" name="display" />
-                  </td>
-                  <td>
-                    <button>복사</button>
-                  </td>
-                  <td>
-                    <button>수정</button>
-                  </td>
-                  <td>
-                    <button>삭제</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <input type="submit" value="상품등록" />
-          </form>
-        </section>
-        <button>체크상품 수정</button>
-        <button>체크상품 삭제</button>
-        <section>
-          <h1>페이지요청목록</h1>
-          <button>이전</button>
-          <ul>
-            <li>1</li>
-            <li>2</li>
-          </ul>
-          <button>다음</button>
-        </section>
-      </main>
-    </section>
+            <button>초기화</button>
+          </section>
+          <section>
+            <h1>상품목록</h1>
+            <form action="">
+              <table border="1">
+                <thead>
+                  <tr>
+                    <td>번호</td>
+                    <td>상품명(상품분류, 상품코드, 관리코드)</td>
+                    <td>등록일</td>
+                    <td>가격</td>
+                    <td>재고</td>
+                    <td>진열</td>
+                    <td>복사</td>
+                    <td>수정</td>
+                    <td>삭제</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>
+                      <ul>
+                        <li>아이템</li>
+                        <li>G54914655B7634</li>
+                        <li>가죽바지</li>
+                      </ul>
+                    </td>
+                    <td>14.12.17 18:01</td>
+                    <td>
+                      <input type="text" name="price" />
+                    </td>
+                    <td>옵션별</td>
+                    <td>
+                      <input type="checkbox" name="display" />
+                    </td>
+                    <td>
+                      <button>복사</button>
+                    </td>
+                    <td>
+                      <button>수정</button>
+                    </td>
+                    <td>
+                      <button>삭제</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <input type="submit" value="상품등록" />
+            </form>
+          </section>
+          <button>체크상품 수정</button>
+          <button>체크상품 삭제</button>
+          <section>
+            <h1>페이지요청목록</h1>
+            <button>이전</button>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+            </ul>
+            <button>다음</button>
+          </section>
+        </main>
+      </section>
+    </div>
     <section>
       <footer id="footer" class="footer">
         <h1>푸터</h1>
