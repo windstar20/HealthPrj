@@ -65,17 +65,19 @@ h1.no_display {
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
-.body > .main_section {
+/*------------------------------*/
+.main_section {
   flex-grow: 1;
   flex-shrink: 1;
+}
+.main {
   min-width: 700px;
-  flex-basis: 100%;
-  --background-color: blue;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
-/*------------------------------*/
-.main_title {
+
+.main_head {
   background-color: #f2f2f2;
   flex-basis: 42px;
   /*text 세로 가운데 정렬*/
@@ -83,12 +85,12 @@ h1.no_display {
   align-items: center;
   justify-content: space-between;
 }
-.main_title > span {
+.main_head > span {
   font-weight: lighter;
   font-size: 10px;
 }
 
-.main {
+.main_body {
   padding: 35px 0 0 40px;
   flex-grow: 1;
 }

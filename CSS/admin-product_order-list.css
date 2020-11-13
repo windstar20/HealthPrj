@@ -1,0 +1,15 @@
+table,
+td,
+th {
+  /* 단어기준으로 word-wrap */
+  word-break: keep-all;
+  word-wrap: normal;
+  /* ----- */
+  border: 1px solid black;
+  min-width: 100px;
+}
+
+th,
+.order_list_table td {
+  text-align: center;
+}
