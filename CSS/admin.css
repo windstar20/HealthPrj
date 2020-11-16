@@ -2,6 +2,7 @@
 html {
   font-family: "Nanum Gothic", sans-serif;
 }
+
 h1.no_display {
   display: none;
 }
@@ -34,6 +35,9 @@ h1.no_display {
   border-bottom: 1px solid black;
   text-align: center;
 }
+.header > nav > ul > li > a {
+  text-decoration: none;
+}
 .header > nav > ul > li:first-child {
   border-left: 1px solid black;
 }
@@ -53,7 +57,7 @@ h1.no_display {
 /*--------------------------*/
 .body {
   display: flex;
-  min-height: 650px;
+  min-height: 666px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -91,7 +95,7 @@ h1.no_display {
 }
 
 .main_body {
-  padding: 35px 0 0 40px;
+  padding: 35px 40px 0 40px;
   flex-grow: 1;
 }
 
@@ -104,6 +108,7 @@ h1.no_display {
   background-color: red;
   display: inline-block;
   flex-basis: 42px;
+  margin-bottom: 10px;
 }
 
 .aside_menu {
@@ -123,6 +128,7 @@ h1.no_display {
   font-weight: normal;
   margin-left: 20px;
   line-height: 25px;
+  text-decoration: none;
 }
 .aside_menu > ul > li > a::before {
   content: "> ";
@@ -135,4 +141,5 @@ h1.no_display {
   min-height: 100px;
   background-color: black;
 }
+
 /* -------------product_detail----------- */

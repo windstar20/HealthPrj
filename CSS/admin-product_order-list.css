@@ -13,3 +13,7 @@ th,
 .order_list_table td {
   text-align: center;
 }
+
+.table_sum {
+  display: flex;
+}
