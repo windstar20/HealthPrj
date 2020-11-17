@@ -2,7 +2,10 @@
 html {
   font-family: "Nanum Gothic", sans-serif;
 }
-
+input,
+select {
+  outline: 0;
+}
 .img-button {
   display: inline-block;
   text-indent: -999px;
