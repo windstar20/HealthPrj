@@ -3,6 +3,13 @@ html {
   font-family: "Nanum Gothic", sans-serif;
 }
 
+.img-button {
+  display: inline-block;
+  text-indent: -999px;
+  overflow: hidden;
+  border: none;
+}
+
 h1.no_display {
   display: none;
 }
