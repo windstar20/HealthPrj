@@ -72,12 +72,35 @@ th {
 }
 
 .sort_bar {
-  background-color: beige;
   display: flex;
   justify-content: flex-end;
+  margin-top: 10px;
 }
 .sort_bar > ul {
   display: flex;
+}
+.sort_bar li {
+  padding-right: 10px;
+}
+.up-button {
+  background: url(../image/admin/up-button.png) no-repeat center;
+  width: 12px;
+  height: 12px;
+}
+.up-button:hover {
+  transition: 0.5s ease;
+  position: relative;
+  bottom: 2px;
+}
+.down-button:hover {
+  transition: 0.5s ease;
+  position: relative;
+  top: 2px;
+}
+.down-button {
+  background: url(../image/admin/down-button.png) no-repeat center;
+  width: 12px;
+  height: 12px;
 }
 
 .order-list-table {

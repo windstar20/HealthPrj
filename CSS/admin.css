@@ -42,19 +42,20 @@ h1.no_display {
   min-width: 210px;
   color: white;
   font-weight: bold;
-  border-right: 1px solid black;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-right: 1px solid #979797;
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
   text-align: center;
+  line-height: 100px; /*수직 가운데 정렬*/
 }
 .header > nav > ul > li > a {
   text-decoration: none;
 }
 .header > nav > ul > li:first-child {
-  border-left: 1px solid black;
+  border-left: 1px solid #979797;
 }
 .header > nav > ul > li:last-child {
-  border-right: 1px solid black;
+  border-right: 1px solid #979797;
 }
 
 .logout {
