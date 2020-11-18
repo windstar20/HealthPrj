@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"); /* -----------------공통------------ */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+/* -----------------공통------------ */
+
 html {
   font-family: "Nanum Gothic", sans-serif;
 }
@@ -135,7 +137,6 @@ h1.no_display {
 }
 .aside_menu > ul > li > a {
   font-size: 0.8em;
-  font-weight: normal;
   margin-left: 20px;
   line-height: 25px;
   text-decoration: none;
@@ -145,6 +146,9 @@ h1.no_display {
   font-size: 1px;
   position: relative;
   top: -3px;
+}
+.aside_current {
+  font-weight: bold;
 }
 /*-------------------------------------------*/
 .footer {

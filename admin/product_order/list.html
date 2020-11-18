@@ -32,31 +32,16 @@
 
     <div id="body" class="body">
       <aside class="aside">
-        <h1 class="aside_title">ASIDE</h1>
+        <h1 class="aside_title img-button">주문관리</h1>
         <ul class="aside_menu">
           <li>쇼핑몰 주문 관리</li>
           <ul>
-            <li><a href="">주문리스트(전체)</a></li>
-            <li><a href="">입금대기</a></li>
-            <li><a href="">입금완료</a></li>
-            <li><a href="">배송준비</a></li>
-            <li><a href="">배송중</a></li>
-            <li><a href="">배송완료</a></li>
-          </ul>
-          <br />
-          <li>쇼핑몰 주문취소 관리</li>
-          <ul>
-            <li><a href="">주문리스트(전체)</a></li>
-            <li><a href="">입금대기</a></li>
-            <li><a href="">입금완료</a></li>
-            <li><a href="">배송준비</a></li>
-            <li><a href="">배송중</a></li>
-            <li><a href="">배송완료</a></li>
+            <li><a href="list.html" class="aside_current">주문리스트</a></li>
+            <li><a href="">주문취소리스트</a></li>
           </ul>
           <br />
           <li>포인트 결제 관리</li>
           <ul>
-            <li><a href="">포인트 관리</a></li>
             <li><a href="">포인트 충전 내역</a></li>
             <li><a href="">포인트 사용 내역</a></li>
           </ul>
@@ -156,22 +141,31 @@
             </section>
             <!-- 테이블 끝 -->
             <section>
-              <h1 class="table_title">주문리스트</h1>
-              <ul class="table_sum">
-                <li>검색결과 : 0건</li>
-                <li>총결제금액 : 0원</li>
-                <li>
-                  <select name="" id="">
-                    <option value="">5개 출력</option>
-                    <option value="">10개 출력</option>
-                    <option value="">20개 출력</option>
-                    <option value="">50개 출력</option>
-                    <option value="">100개 출력</option>
-                  </select>
-                </li>
-              </ul>
-
+              <section>
+                <h1 class="table_title">주문리스트</h1>
+                <ul class="table_sum">
+                  <li>검색결과 : 0건</li>
+                  <li>총결제금액 : 0원</li>
+                  <li>
+                    <select name="" id="">
+                      <option value="">5개 출력</option>
+                      <option value="">10개 출력</option>
+                      <option value="">20개 출력</option>
+                      <option value="">50개 출력</option>
+                      <option value="">100개 출력</option>
+                    </select>
+                  </li>
+                </ul>
+              </section>
               <!-- 테이블 시작 -->
+              <div class="sort_bar">
+                <h1>정렬</h1>
+                <ul>
+                  <li>주문일 <span>up</span> <span>down</span></li>
+                  <li>주문자 <span>up</span> <span>down</span></li>
+                  <li>결제금액 <span>up</span> <span>down</span></li>
+                </ul>
+              </div>
               <table class="order-list-table">
                 <thead>
                   <tr>
@@ -209,7 +203,7 @@
                     </td>
                     <td>329,000원</td>
                     <td>무통장<br />입금자명</td>
-                    <td>미입금</td>
+                    <td>입금대기</td>
                     <td>
                       <input
                         class="select-button"
@@ -249,7 +243,7 @@
                     </td>
                     <td>329,000원</td>
                     <td>무통장<br />입금자명</td>
-                    <td>미입금</td>
+                    <td>입금대기</td>
                     <td>
                       <input
                         class="select-button"

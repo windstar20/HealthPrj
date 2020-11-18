@@ -30,6 +30,10 @@ th {
   transition: all 1s ease;
 }
 /* ---------------------------- */
+.aside_title {
+  background: url(../image/admin/product_order_aside.png) no-repeat;
+}
+
 .search-table,
 .order-list-table {
   margin: 10px 0;
@@ -66,7 +70,14 @@ th {
   transition: 1s ease;
   background: rgb(54, 98, 240);
 }
-.search-button:active {
+
+.sort_bar {
+  background-color: beige;
+  display: flex;
+  justify-content: flex-end;
+}
+.sort_bar > ul {
+  display: flex;
 }
 
 .order-list-table {
