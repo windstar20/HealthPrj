@@ -6,19 +6,19 @@
     <title>주문 리스트</title>
     <link rel="stylesheet" href="../../CSS/reset.css" />
     <link rel="stylesheet" href="../../CSS/admin.css" />
-    <link rel="stylesheet" href="../../CSS/admin-product_order-list.css" />
+    <link rel="stylesheet" href="../../CSS/admin-product-order-list.css" />
   </head>
   <body>
     <header id="header" class="header">
-      <div class="logo_bar">
-        <h1 class="no_display">근처</h1>
+      <div class="logo-bar">
+        <h1 class="no-display">근처</h1>
         <a href=""><div class="logo"></div></a>
         <ul>
           <li><button class="logout">로그아웃</button></li>
         </ul>
       </div>
       <nav id="nav" class="nav">
-        <h1 class="no_display">메뉴</h1>
+        <h1 class="no-display">메뉴</h1>
         <ul>
           <li><a href="#">기본설정</a></li>
           <li><a href="#">상품관리</a></li>
@@ -32,12 +32,11 @@
 
     <div id="body" class="body">
       <aside class="aside">
-        <h1 class="aside_title img-button">주문관리</h1>
-        <ul class="aside_menu">
+        <h1 class="aside-title img-button">주문관리</h1>
+        <ul class="aside-menu">
           <li>쇼핑몰 주문 관리</li>
           <ul>
-            <li><a href="list.html" class="aside_current">주문리스트</a></li>
-            <li><a href="">주문취소리스트</a></li>
+            <li><a href="list.html" class="aside-current">주문리스트</a></li>
           </ul>
           <br />
           <li>포인트 결제 관리</li>
@@ -48,15 +47,15 @@
           <br />
         </ul>
       </aside>
-      <section class="main_section">
+      <section class="main-section">
         <main id="main" class="main">
-          <div class="main_head">
+          <div class="main-head">
             <h1>주문 리스트(전체)</h1>
             <span> home > 상품관리 > 상품리스트 </span>
           </div>
-          <div class="main_body">
+          <div class="main-body">
             <section>
-              <h1 class="table_title">주문검색</h1>
+              <h1 class="table-title">주문검색</h1>
               <form action="">
                 <table class="search-table">
                   <!-- 첫번째 줄 시작-->
@@ -107,10 +106,31 @@
                   <tr>
                     <th>취소상태</th>
                     <td>
-                      <input type="checkbox" name="" id="" /><span>취소</span>
-                      <input type="checkbox" name="" id="" /><span>환불</span>
-                      <input type="checkbox" name="" id="" /><span>반품</span>
-                      <input type="checkbox" name="" id="" /><span>교환</span>
+                      <input type="checkbox" name="" id="" /><span
+                        >취소요청</span
+                      >
+                      <input type="checkbox" name="" id="" /><span
+                        >환불요청</span
+                      >
+                      <input type="checkbox" name="" id="" /><span
+                        >반품요청</span
+                      >
+                      <input type="checkbox" name="" id="" /><span
+                        >교환요청</span
+                      >
+                      <br />
+                      <input type="checkbox" name="" id="" /><span
+                        >취소완료</span
+                      >
+                      <input type="checkbox" name="" id="" /><span
+                        >환불완료</span
+                      >
+                      <input type="checkbox" name="" id="" /><span
+                        >반품완료</span
+                      >
+                      <input type="checkbox" name="" id="" /><span
+                        >교환완료</span
+                      >
                     </td>
                   </tr>
                   <!-- 세번째 줄 끝 -->
@@ -142,8 +162,8 @@
             <!-- 테이블 끝 -->
             <section>
               <section>
-                <h1 class="table_title">주문리스트</h1>
-                <ul class="table_sum">
+                <h1 class="table-title">주문리스트</h1>
+                <ul class="table-sum">
                   <li>검색결과 : 0건</li>
                   <li>총결제금액 : 0원</li>
                   <li>
@@ -158,8 +178,8 @@
                 </ul>
               </section>
               <!-- 테이블 시작 -->
-              <div class="sort_bar">
-                <h1 class="no_display">정렬</h1>
+              <div class="sort-bar">
+                <h1 class="no-display">정렬</h1>
                 <ul>
                   <li>
                     주문일 <span class="img-button up-button">up</span>
