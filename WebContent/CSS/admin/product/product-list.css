@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
- /* -----------------공통------------ */
+ /* -----------------����------------ */
 html {
   font-family: "Nanum Gothic", sans-serif;
 }
-h1.no_display {
+h1.no-display {
   display: none;
 }
 ul, li{
@@ -24,20 +24,20 @@ input[type=checkbox]{
 }
 
 .img-button{
-  text-indent: -999px;  /*text-indent 문장의 첫째줄은 들여쓰기를 한다. 그 값을 적용하는 스타일*/
+  text-indent: -999px;  /*text-indent ������ ù°���� �鿩���⸦ �Ѵ�. �� ���� �����ϴ� ��Ÿ��*/
   overflow: hidden;    
-  display: inline-block;  /*a태그를 inline-block로 변경*/
+  display: inline-block;  /*a�±׸� inline-block�� ����*/
   border: none;
 }
 
 .logo {
-  background: url("../image/logo.png") no-repeat center;
+  background: url("../../../image/logo.png") no-repeat center;
   height: 100px;
   width: 300px;
   background-size: contain;
 }
 
-.logo_bar {
+.logo-bar {
   background-color: gray;
   display: flex;
   min-height: 50px;
@@ -93,7 +93,7 @@ input[type=checkbox]{
 }
 
 
-.logo_img {
+.logo-img {
   width: 300px;
 }
 .body {
@@ -111,7 +111,7 @@ input[type=checkbox]{
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
-.body > .main_section {
+.body > .main-section {
   flex-grow: 1;
   flex-shrink: 1;
   min-width: 700px;
@@ -120,18 +120,18 @@ input[type=checkbox]{
   display: flex;
   flex-direction: column;
 }
-.main_title {
+.main-title {
   background-color: #f2f2f2;
   flex-basis: 42px;
-  /*text 세로 가운데 정렬*/
+  /*text ���� ��� ����*/
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.main_title>h1{
+.main-title>h1{
   margin-left: 10px;
 }
-.main_title > span {
+.main-title > span {
   font-weight: lighter;
   font-size: 10px;
 }
@@ -341,7 +341,7 @@ input[type=checkbox]{
       }
             .product-name-img>a{
               display: inline-block;
-              background:url("../image/admin/impactwhey.png") no-repeat center; 
+              background:url("../../../image/admin/impactwhey.png") no-repeat center; 
               min-width: 150px;
               height: 150px;
               text-indent: -999px;
@@ -488,30 +488,30 @@ input[type=checkbox]{
   display: flex;
   flex-direction: column;
 }
-.aside_title {
+.aside-title {
   background-color: red;
   display: inline-block;
   flex-basis: 42px;
 }
-.aside_menu {
+.aside-menu {
   display: flex;
   flex-direction: column;
   font-size: 20px;
   --background-color: blue;
   flex-grow: 1;
 }
-.aside_menu > li {
+.aside-menu > li {
   font-weight: bold;
   margin-bottom: 5px;
   margin-left: 10px;
 }
-.aside_menu > ul > li > a {
+.aside-menu > ul > li > a {
   font-size: 0.8em;
   font-weight: normal;
   margin-left: 20px;
   line-height: 25px;
 }
-.aside_menu > ul > li > a::before {
+.aside-menu > ul > li > a::before {
   content: "> ";
   font-size: 1px;
   position: relative;
@@ -522,4 +522,4 @@ input[type=checkbox]{
   min-height: 100px;
   background-color: black;
 }
-/* -------------product_detail----------- */
+/* -------------product-detail----------- */

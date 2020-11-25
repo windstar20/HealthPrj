@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>admin page</title>
     <link rel="stylesheet" href="../../CSS/reset.css">
-    <link rel="stylesheet" href="../../CSS/style.css">
-    <link rel="stylesheet" href="../../CSS/admin-list.css" />
+    <link rel="stylesheet" href="../../CSS/admin/product/product-list.css" />
   </head>
   <body>
     <header id="header" class="header">
-      <div class="logo_bar">
-        <h1 class="no_display">근처</h1>
+      <div class="logo-bar">
+        <h1 class="no-display">근처</h1>
         <a href=""><div class="logo"></div></a>
         <ul>
           <li><button class="login">로그인</button></li>
@@ -19,7 +18,7 @@
         </ul>
       </div>
       <nav id="nav" class="nav">
-        <h1 class="no_display">메뉴</h1>
+        <h1 class="no-display">메뉴</h1>
         <ul>
           <li><a href="#">기본설정</a></li>
           <li><a href="#">상품관리</a></li>
@@ -33,8 +32,8 @@
 
     <div id="body" class="body">
       <aside class="aside">
-        <h1 class="aside_title">ASIDE</h1>
-        <ul class="aside_menu">
+        <h1 class="aside-title">ASIDE</h1>
+        <ul class="aside-menu">
           <li>쇼핑몰 상품 관리</li>
           <ul>
             <li><a href="">상품 리스트</a></li>
@@ -57,38 +56,17 @@
             <li><a href="">강사 정보 수정</a></li>
           </ul>
           <br />
-          <!-- <li>상품 일괄 관리</li>
-          <ul>
-            <li><a href="">일반정보 일괄 수정</a></li>
-            <li><a href="">가격 일괄 수정</a></li>
-            <li><a href="">옵션정보 일괄 수정</a></li>
-            <li><a href="">할인가 일괄 수정</a></li>
-            <li><a href="">적립금 일괄 수정</a></li>
-            <li><a href="">배송비 일괄 수정</a></li>
-            <li><a href="">단위판매 일괄 수정</a></li>
-            <li><a href="">상품 이동/복사/삭제</a></li>
-            <li><a href="">이벤트 아이콘 일괄 수정</a></li>
           </ul>
-          <br />
-          <li>상품 진열 관리</li>
-          <ul>
-            <li><a href="">메인상품 진열</a></li>
-            <li><a href="">일반상품 진열</a></li>
-            <li><a href="">분류별 추천상품 진열</a></li>
-            <li><a href="">관련상품 진열</a></li>
-          </ul>
-          <br /> -->
-        </ul>
       </aside>
-      <section class="main_section">
-        <div class="main_title">
+      <section class="main-section">
+        <div class="main-title">
           <h1>상품 리스트</h1>
           <span> home > 상품관리 > 상품리스트 </span>
         </div>
         <section id="main" class="main">
           <section class="finder-container">
             <!-- <div class="finder-box"> -->
-              <h1 class="no_display">상품검색도구</h1>
+              <h1 class="no-display">상품검색도구</h1>
                 <div class="select-row">
                   <div class="select-head">분류선택</div>
                   <div class="select-cell">
@@ -142,7 +120,7 @@
           </div>
           <section class="sort-container">
             <div class="sort-box">
-              <h1 class="no_display">정렬박스</h1>
+              <h1 class="no-display">정렬박스</h1>
               <a href="#">낮은 가격순</a>
               <a href="#">높은 가격순</a>
               <a href="#">등록일순</a>
@@ -151,7 +129,7 @@
           </section>
           <section class="productList-container">
             <div class="productList-box">
-              <h1 class="no_display">상품목록 박스</h1>
+              <h1 class="no-display">상품목록 박스</h1>
               <ul class="title-row">
                 <li class="title-check">
                   <input type="checkbox">         
@@ -199,227 +177,11 @@
                     <input type="button" value="삭제">
                 </li>
               </ul>
-              <!-- <ul class="product-row">
-                <li class="product-check-area">
-                  <div class="product-check">
-                    <input type="checkbox">
-                  </div>
-                </li>
-                <li class="product-list-number-area">
-                  <div class="product-list-number">2</div>                  
-                </li>
-                <li class="productName-area">
-                  <div class="product-img">
-                    <div class="thumbnail-wrap">
-                      <a href="#">
-                        <img src="../../image/admin/brownie.jpg" alt="썸네일이미지">
-                      </a>
-                    </div>
-                    <div class="product-wrapper">                
-                      <div class="product-code">new1234</div>
-                      <div class="product-group">스낵</div>
-                    </div> 
-                </div>
-                </li>                
-                <li class="product-regdate-area">
-                  <div class="product-regdate">2020.11.11</div>                  
-                </li>
-                <li class="product-price-area">
-                  <div class="product-price">
-                    <input type="text" >
-                  </div>                  
-                </li>
-                <li class="product-inventory-area">
-                  <div class="product-inventory">50개</div>
-                </li>
-                <li class="product-display-area">
-                  <div class="product-display">
-                    <input type="checkbox"> 
-                  </div>
-                </li>
-                <li class="product-copy-area">
-                  <div class="product-copy">
-                    <input type="button" value="복사">
-                  </div>  
-                </li>
-                <li class="product-edit-area">
-                  <div class="product-edit">
-                    <input type="button" value="수정">
-                  </div>  
-                </li>
-                <li class="product-remove-area">
-                  <div class="product-remove">
-                    <input type="button" value="삭제">
-                  </div>
-                </li>
-              </ul>
-              <ul class="product-row">
-                <li class="product-check-area">
-                  <div class="product-check">
-                    <input type="checkbox">
-                  </div>
-                </li>
-                <li class="product-list-number-area">
-                  <div class="product-list-number">3</div>                  
-                </li>
-                <li class="productName-area">
-                  <div class="product-img">
-                    <div class="thumbnail-wrap">
-                      <a href="#">
-                        <img src="../../image/admin/lemon.png" alt="썸네일이미지">
-                      </a>
-                    </div>
-                    <div class="product-wrapper">                
-                      <div class="product-code">fruit1010</div>
-                      <div class="product-group">채식주의</div>
-                    </div> 
-                </div>
-                </li>                
-                <li class="product-regdate-area">
-                  <div class="product-regdate">2020.11.11</div>                  
-                </li>
-                <li class="product-price-area">
-                  <div class="product-price">
-                    <input type="text" >
-                  </div>                  
-                </li>
-                <li class="product-inventory-area">
-                  <div class="product-inventory">30개</div>
-                </li>
-                <li class="product-display-area">
-                  <div class="product-display">
-                    <input type="checkbox"> 
-                  </div>
-                </li>
-                <li class="product-copy-area">
-                  <div class="product-copy">
-                    <input type="button" value="복사">
-                  </div>  
-                </li>
-                <li class="product-edit-area">
-                  <div class="product-edit">
-                    <input type="button" value="수정">
-                  </div>  
-                </li>
-                <li class="product-remove-area">
-                  <div class="product-remove">
-                    <input type="button" value="삭제">
-                  </div>
-                </li>
-              </ul>
-              <ul class="product-row">
-                <li class="product-check-area">
-                  <div class="product-check">
-                    <input type="checkbox">
-                  </div>
-                </li>
-                <li class="product-list-number-area">
-                  <div class="product-list-number">4</div>                  
-                </li>
-                <li class="productName-area">
-                  <div class="product-img">
-                    <div class="thumbnail-wrap">
-                      <a href="#">
-                        <img src="../../image/admin/drink.png" alt="썸네일이미지">
-                      </a>
-                    </div>
-                    <div class="product-wrapper">                
-                      <div class="product-code">drink2020</div>
-                      <div class="product-group">드링크</div>
-                    </div> 
-                </div>
-                </li>                
-                <li class="product-regdate-area">
-                  <div class="product-regdate">2020.11.15</div>                  
-                </li>
-                <li class="product-price-area">
-                  <div class="product-price">
-                    <input type="text" >
-                  </div>                  
-                </li>
-                <li class="product-inventory-area">
-                  <div class="product-inventory">15개</div>
-                </li>
-                <li class="product-display-area">
-                  <div class="product-display">
-                    <input type="checkbox"> 
-                  </div>
-                </li>
-                <li class="product-copy-area">
-                  <div class="product-copy">
-                    <input type="button" value="복사">
-                  </div>  
-                </li>
-                <li class="product-edit-area">
-                  <div class="product-edit">
-                    <input type="button" value="수정">
-                  </div>  
-                </li>
-                <li class="product-remove-area">
-                  <div class="product-remove">
-                    <input type="button" value="삭제">
-                  </div>
-                </li>
-              </ul>
-              <ul class="product-row">
-                <li class="product-check-area">
-                  <div class="product-check">
-                    <input type="checkbox">
-                  </div>
-                </li>
-                <li class="product-list-number-area">
-                  <div class="product-list-number">5</div>                  
-                </li>
-                <li class="productName-area">
-                  <div class="product-img">
-                    <div class="thumbnail-wrap">
-                      <a href="#">
-                        <img src="../../image/admin/energygel.jpg" alt="썸네일이미지">
-                      </a>
-                    </div>
-                    <div class="product-wrapper">                
-                      <div class="product-code">gel2019</div>
-                      <div class="product-group">에너지젤</div>
-                    </div> 
-                </div>
-                </li>                
-                <li class="product-regdate-area">
-                  <div class="product-regdate">2020.11.16</div>                  
-                </li>
-                <li class="product-price-area">
-                  <div class="product-price">
-                    <input type="text" >
-                  </div>                  
-                </li>
-                <li class="product-inventory-area">
-                  <div class="product-inventory">21개</div>
-                </li>
-                <li class="product-display-area">
-                  <div class="product-display">
-                    <input type="checkbox"> 
-                  </div>
-                </li>
-                <li class="product-copy-area">
-                  <div class="product-copy">
-                    <input type="button" value="복사">
-                  </div>  
-                </li>
-                <li class="product-edit-area">
-                  <div class="product-edit">
-                    <input type="button" value="수정">
-                  </div>  
-                </li>
-                <li class="product-remove-area">
-                  <div class="product-remove">
-                    <input type="button" value="삭제">
-                  </div>
-                </li>
-              </ul>           -->
             </div> <!--productList-box end-->
           </section>   <!-- product container end-->
           <section class="pager-container">
             <div class="pager-box">
-              <h1 class="no_display">페이지 요청목록</h1>
+              <h1 class="no-display">페이지 요청목록</h1>
               <div class="check-box-edit">
                 <input type="button" value="체크상품수정">
                 <input type="button" value="체크상품삭제">
