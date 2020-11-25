@@ -1,10 +1,11 @@
 
-.d-none{
+.no-display{
     display: none;
 }
 
 .img-button{
     display: inline-block;
     text-indent: -999px;
+    overflow: hidden;
     border: none;
 }
