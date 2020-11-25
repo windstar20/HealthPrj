@@ -1,4 +1,9 @@
 .vscode/
+<<<<<<< HEAD
 .settings/
 build/
 .classpath
+=======
+.classpath
+.settings
+>>>>>>> ebc099cd337f9de3cef16fa38e353d70e2c08285
