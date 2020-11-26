@@ -120,16 +120,19 @@ input[type=checkbox]{
   display: flex;
   flex-direction: column;
 }
-.main-title {
-  background-color: #f2f2f2;
-  flex-basis: 42px;
-  /*text ���� ��� ����*/
+.main-title{
   display: flex;
+  height: 42px;
+  background: rgb(195, 200, 183);
   align-items: center;
   justify-content: space-between;
+  
 }
+
 .main-title>h1{
-  margin-left: 10px;
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 20px;
 }
 .main-title > span {
   font-weight: lighter;
