@@ -210,17 +210,17 @@ select {
       --margin-left: 30px;
       width: 300px;
       height: 18px;
-    }
-    .product-basic-info span{
-      font-size: 10px;
-      color: rgb(231, 142, 109);
+     
     }
     .product-basic-info textarea{
       box-sizing: border-box;
       width: 99%;
       padding: 5px;
     }
- 
+    .product-basic-info span{
+      font-size: 10px;
+      color: rgb(231, 142, 109);
+    }
     .product-price-info input[type="text"]{
       box-sizing: border-box;
       width: 200px;
@@ -237,8 +237,37 @@ select {
       width: 300px;
       height: 22px;
     }
+    .product-image-info input[type=file]{
+      width: 200px;
+
+    }
+    .product-image-info label{
+      font-size: 10px;
+      color: rgb(231, 142, 109);
+    }
+    .product-explain-info tr:last-child{
+      height: 175px;  
+    }
+
+    .product-explain-info textarea{
+      box-sizing: border-box;
+      width: 99%;
+      padding: 5px;
+    }
+    .application {
+      width: 1010px;
+      margin-top: 10px;
+      text-align: right;
+    }
+    .application>form>input{
+      width: 70px;
+      height: 30px;      
+    }
 
 
+
+
+    
 
 
 

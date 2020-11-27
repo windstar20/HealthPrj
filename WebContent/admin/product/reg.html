@@ -104,7 +104,7 @@
                 <tr>
                     <th>관리 메모</th>
                     <td>
-                    <textarea cols="70" rows="10"></textarea>
+                    <textarea rows="10"></textarea>
                     <span>*상품 관리를 위한 메모를 작성할 수 있습니다.</span>
                     </td>
                 </tr>
@@ -142,7 +142,7 @@
                         <label>품절</label>
                         <input type="radio" name="inventory">
                         <label>잔여수량</label>
-                        <input type="text">개
+                        <input type="text"> 개
                     </td>
                 </tr>
                 <tr>
@@ -192,12 +192,13 @@
             </table>
         
             <h1>상품 이미지</h1>
-            <table >
+            <table class="product-image-info product-table">
                 <tr>
                     <th>기본 이미지</th>
-                    <th>                      
-                        <input type="file" ><label>권장사이즈(500x500)</label>                                                
-                    </th>
+                    <td>                      
+                        <input type="file" >
+                        <label>권장사이즈(500x500)</label>                                                
+                    </td>
                 </tr>
                 <tr>
                     <th>추가 이미지</th>
@@ -208,7 +209,7 @@
             </table>
         
             <h1>상세 설명</h1>
-            <table>
+            <table class="product-explain-info product-table">
                 <tr>
                     <th >상세설명</th>
                     <td>
@@ -222,14 +223,14 @@
                     <th>상세설명</th>
                     <td>
                         <form>
-                            <textarea cols="70" rows="10"></textarea>
+                            <textarea rows=10></textarea>
                         </form>
                     </td>
                 </tr>
             </table>
-            <div>
+            <div class="application">
                 <form>
-                    <input type="button" value="적용하기">
+                    <input type="button" value="상품등록"">
                 </form>
             </div>
             </section>
