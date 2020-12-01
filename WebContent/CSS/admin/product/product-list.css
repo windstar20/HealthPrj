@@ -456,7 +456,7 @@ input[type=checkbox]{
     }
 
         .before-button {
-          background: url("../image/admin/arrow-l.png") no-repeat center;
+          background: url("../../../image/admin/arrow-l.png") no-repeat center;
           width: 30px;
           height: 30px;
           margin-right: 30px;
@@ -464,7 +464,7 @@ input[type=checkbox]{
         .next-button {
           width: 30px;
           height: 30px;
-          background: url("../image/admin/arrow-r.png") no-repeat center;
+          background: url("../../../image/admin/arrow-r.png") no-repeat center;
           margin-left: 10px;
         }
     .pager-menu li{

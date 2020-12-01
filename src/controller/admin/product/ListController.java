@@ -15,37 +15,37 @@ import gc.entity.Product;
 import gc.service.ProductListService;
 
 
-@WebServlet("/admin/product/list")
+@WebServlet("/admin/product235/list")
 public class ListController extends HttpServlet{
 	
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		int size = 1;
-		String size_ = request.getParameter("size");
-		
-		if(request.getParameter("size")!=null)
-			size = Integer.parseInt(size_);
-		
-		
-		PrintWriter out = response.getWriter();  // 
-
-		ProductListService service = new ProductListService();
-		List<Product> list = service.getList();
-		
-		String html = "<table border='1'>";
-		for (int i = 0; i < size; i++) {
-			Product p = list.get(i);			
-			
-			html += "<tr>";
-			html += "<td>"+(i+1)+"</td><td>"+p.getId() + "</td><td>" + p.getName()+"</td><td>"+p.getId() + "</td><td>" +p.getCode()+ "</td><td>"+p.getPrice() + "</td><td>" + p.getStock()+"</td>";
-			html += "</tr>";
-		}
-		
-		html +="</table>";
-		out.println(html);
-			
-	 
+//		int size = 1;
+//		String size_ = request.getParameter("size");
+//		
+//		if(request.getParameter("size")!=null)
+//			size = Integer.parseInt(size_);
+//		
+//		
+//		PrintWriter out = response.getWriter();  // 
+//
+//		ProductListService service = new ProductListService();
+//		List<Product> list = service.getList();
+//		
+//		String html = "<table border='1'>";
+//		for (int i = 0; i < size; i++) {
+//			Product p = list.get(i);			
+//			
+//			html += "<tr>";
+//			html += "<td>"+(i+1)+"</td><td>"+p.getId() + "</td><td>" + p.getName()+"</td><td>"+p.getId() + "</td><td>" +p.getCode()+ "</td><td>"+p.getPrice() + "</td><td>" + p.getStock()+"</td>";
+//			html += "</tr>";
+//		}
+//		
+//		html +="</table>";
+//		out.println(html);
+//			
+//	 
 		
 	}
 }

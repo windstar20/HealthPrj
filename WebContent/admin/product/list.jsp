@@ -3,13 +3,7 @@
 <%@page import="gc.product.service.ProductListService"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
-    
-<%
-	ProductListService service = new ProductListService();
-	List<Product> list = service.getList();
-%>    
-        
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
     
     
 <!DOCTYPE html>
@@ -51,7 +45,7 @@
           <li>쇼핑몰 상품 관리</li>
           <ul>
             <li><a href="">상품 리스트</a></li>
-            <li><a href="">상품 등록</a></li>
+            <li><a href="reg.html">상품 등록</a></li>
             <li><a href="">상품 재고관리</a></li>
           </ul>
           <br />
@@ -160,26 +154,26 @@
                 <li class="title-remove">삭제</li>
               </ul>
 
-           	  <%for(Product p : list){%>
+           	  <c:forEach var="n" items="${list}">
               <ul class="product-row">
                   <li class="product-check-list">
                     <input type="checkbox">
                   </li>
-                  <li class="product-number-list"><%=p.getId() %></li>                  
+                  <li class="product-number-list">${n.id}</li>                  
                   <li class="product-name-list">
                     <div class="product-name-img">
                       <a href="#">이미지</a>
                     </div>
                     <div class="product-explain">
-                      <div class="product-code"><%=p.getCode() %></div>
-                      <div class="product-group"><%=p.getName() %></div>
+                      <div class="product-code">${n.code}</div>
+                      <div class="product-group">${n.name}</div>
                     </div>
                   </li>                
-                <li class="product-regdate-list"><%=p.getRegdate() %></li>
+                <li class="product-regdate-list">${n.regdate}</li>
                 <li class="product-price-list">
                     <input type="text">
                 </li>
-                <li class="product-inventory-list"><%=p.getInventory() %></li>
+                <li class="product-inventory-list">${n.inventory}</li>
                 <li class="product-display-list">
                   <input type="checkbox">
                 </li>
@@ -193,7 +187,7 @@
                     <input type="button" value="삭제">
                 </li>
               </ul>
-               <%}%>
+              </c:forEach>
             </div> <!--productList-box end-->
           </section>   <!-- product container end-->
           <section class="pager-container">
@@ -208,11 +202,9 @@
               <nav class="pager-menu">
                 <a class="img-button before-button" href="#">이전</a>
                 <ul>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
+                <c:forEach var="i" begin="0" end="7">
+                    <li><a href="#">${i+1}</a></li>
+                </c:forEach>
                 </ul>
                 <a class="img-button next-button" href="#">다음</a>
               </nav>    

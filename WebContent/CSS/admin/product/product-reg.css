@@ -74,7 +74,7 @@ select {
   width: 300px;
 }
 
-/*--------------------------*/
+/*?-----------body---------------*/
 .body {
   display: flex;
   min-height: 666px;
@@ -89,7 +89,7 @@ select {
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
-/*------------------------------*/
+/*?-------------aside-----------------*/
 .aside {
   flex-shrink: 0;
   display: flex;
@@ -159,7 +159,7 @@ select {
 }
 
 .main{
-    padding: 35px 40px 40px 40px;
+    padding: 20px 40px 40px 40px;
 }
 .main>h1{
   padding-left: 17px;
@@ -178,7 +178,7 @@ select {
   left: -2px;
 }
 
- /**===============테이블 공통스타일 */
+ /**===============테이블 공통스타일=============== */
 .product-table{  
   margin-top: 10px;
   --border: solid 1px red;
