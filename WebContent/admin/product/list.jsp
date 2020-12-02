@@ -159,14 +159,14 @@
                   <li class="product-check-list">
                     <input type="checkbox">
                   </li>
-                  <li class="product-number-list">${n.id}</li>                  
+                  <li class="product-number-list">${n.productNumber}</li>                  
                   <li class="product-name-list">
                     <div class="product-name-img">
                       <a href="#">이미지</a>
                     </div>
                     <div class="product-explain">
                       <div class="product-code">${n.code}</div>
-                      <div class="product-group">${n.name}</div>
+                      <div class="product-group">${n.productName}</div>
                     </div>
                   </li>                
                 <li class="product-regdate-list">${n.regdate}</li>
@@ -202,7 +202,7 @@
               <nav class="pager-menu">
                 <a class="img-button before-button" href="#">이전</a>
                 <ul>
-                <c:forEach var="i" begin="0" end="7">
+                <c:forEach var="i" begin="0" end="4">
                     <li><a href="#">${i+1}</a></li>
                 </c:forEach>
                 </ul>
@@ -211,7 +211,7 @@
                 <!-- <div class="next-page"> -->
                 <!-- </div> -->
               <div class="product-reg">
-                <input type="button" value="상품등록">
+                <input type="submit" value="상품등록" >
               </div>   
             </div>
           </section> 
