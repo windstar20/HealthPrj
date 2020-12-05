@@ -1,6 +1,6 @@
-<%@page import="gc.product.entity.Product"%>
+<%@page import="gc.entity.Product"%>
 <%@page import="java.util.List"%>
-<%@page import="gc.product.service.ProductListService"%>
+<%@page import="gc.service.ProductListService"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
@@ -44,9 +44,8 @@
         <ul class="aside-menu">
           <li>쇼핑몰 상품 관리</li>
           <ul>
-            <li><a href="">상품 리스트</a></li>
-            <li><a href="reg.html">상품 등록</a></li>
-            <li><a href="">상품 재고관리</a></li>
+            <li><a href="list">상품 리스트</a></li>
+            <li><a href="reg">상품 등록</a></li>
           </ul>
           <br />
           <li>트레이닝 센터 관리</li>
@@ -80,12 +79,12 @@
                   <div class="select-head">분류선택</div>
                   <div class="select-cell">
                     <select name="" id="" size="1">
-                      <option>1차 분류</option>
+                      <option>분류</option>
                       <option>스포츠웨어</option>
                       <option>단백질 보충제</option>  
-                      <option>스포츠악세사리</option> 
+                      <option>악세사리</option> 
                     </select>
-                    <select name="" id="" size="1">
+                    <!-- <select name="" id="" size="1">
                       <option>2차 분류</option>
                       <option>상의</option>
                       <option>하의</option>    
@@ -96,17 +95,15 @@
                       <option>글러브</option>    
                       <option>물병</option>    
                       <option>마스크</option>    
-                    </select>
+                    </select> -->
                   </div>
                 </div>
                 <div class="search-row">
                   <div class="search-head">검색어</div>
                   <div class="search-cell">
                     <select name="" id="" size="1">
-                      <option>상품명</option>
-                      <option>상품코드</option>
-                      <option>관리코드</option>  
-                      <option>상품검색어</option> 
+                      <option>상품명</option>  
+                      <option>상품분류</option> 
                       <option>제조사</option>
                       <option>모델명</option>    
                     </select>
@@ -127,6 +124,8 @@
           <div class="btn-search">
             <input type="button" value="검색">
           </div>
+          
+          
           <section class="sort-container">
             <div class="sort-box">
               <h1 class="no-display">정렬박스</h1>
@@ -144,47 +143,47 @@
                   <input type="checkbox">         
                 </li>
                 <li class="title-number">번호</li>
-                <li class="title-name">상품명(상품코드, 상품분류)</li>                
+                <li class="title-name">상품(상품명,제조사)</li>                
                 <li class="title-regdate">등록일</li>
                 <li class="title-price">가격</li>
-                <li class="title-inventory">재고</li>
+             <!--    <li class="title-inventory">재고</li> -->
                 <li class="title-display">진열</li>
                 <li class="title-copy">복사</li>
                 <li class="title-edit">수정</li>
                 <li class="title-remove">삭제</li>
               </ul>
 
-           	  <c:forEach var="n" items="${list}">
+           	  <c:forEach var="p" items="${list}">
               <ul class="product-row">
                   <li class="product-check-list">
                     <input type="checkbox">
                   </li>
-                  <li class="product-number-list">${n.productNumber}</li>                  
+                  <li class="product-number-list">${p.id}</li>                  
                   <li class="product-name-list">
                     <div class="product-name-img">
                       <a href="#">이미지</a>
                     </div>
                     <div class="product-explain">
-                      <div class="product-code">${n.code}</div>
-                      <div class="product-group">${n.productName}</div>
+                      <div class="product-code">${p.brand}</div>
+                      <div class="product-group">${p.productName}</div>
                     </div>
                   </li>                
-                <li class="product-regdate-list">${n.regdate}</li>
+                <li class="product-regdate-list">${p.regdate}</li>
                 <li class="product-price-list">
-                    <input type="text">
+                    <label>${p.price}</label>
                 </li>
-                <li class="product-inventory-list">${n.inventory}</li>
+               <%--  <li class="product-inventory-list">${p.inventory}</li> --%>
                 <li class="product-display-list">
                   <input type="checkbox">
                 </li>
                 <li class="product-copy-list">
-                    <input type="button" value="복사">
+                    <input type="button" value="복사" />
                 </li>
                 <li class="product-edit-list">
-                    <input type="button" value="수정">
+                    <a href="edit?id=${p.id}"><input type="button" value="수정"></a>
                 </li>
                 <li class="product-remove-list">
-                    <input type="button" value="삭제">
+                    <a href="del?id=${p.id}"><input type="button" value="삭제" /></a>
                 </li>
               </ul>
               </c:forEach>
@@ -211,7 +210,7 @@
                 <!-- <div class="next-page"> -->
                 <!-- </div> -->
               <div class="product-reg">
-                <input type="submit" value="상품등록" >
+                <a href="reg">상품등록</a>
               </div>   
             </div>
           </section> 

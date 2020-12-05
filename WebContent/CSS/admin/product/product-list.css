@@ -408,7 +408,7 @@ input[type=checkbox]{
           min-width: 100px;
           text-align: center;
       }
-          .product-copy-list>input, .product-edit-list>input, .product-remove-list>input{
+          .product-copy-list input, .product-edit-list input, .product-remove-list input{
             width: 40px;
             height: 25px;
             background: #525f78;
@@ -419,7 +419,7 @@ input[type=checkbox]{
 
 
 
-          .product-copy-list>input:hover, .product-edit-list>input:hover, .product-remove-list>input:hover{
+          .product-copy-list input:hover, .product-edit-list input:hover, .product-remove-list input:hover{
             transition: 3s ease;
             background: #b82525;
             /* position: relative; */
@@ -434,7 +434,7 @@ input[type=checkbox]{
       width: 1300px;
     }
 
-          .check-box-edit>input, .product-reg>input{
+          .check-box-edit>input {
             width: 100px;
             height: 40px;
             outline: none;
@@ -479,6 +479,26 @@ input[type=checkbox]{
       transition: 1s ease;
       font-size: 20px;
 
+    }
+
+    .product-reg>a{ /* 상품등록 */
+      text-decoration: none;
+      display: inline-block;
+      width: 100px;
+      height: 40px;
+      outline: none;
+      border: none;
+      background: #525f78;
+      color: white;
+      font-family: "나눔 고딕";
+      text-align: center;
+      line-height: 40px;
+      font-size: 14px;
+    }
+
+    .product-reg>a:hover{
+      transition: 2s ease;
+      background:  #b82525;
     }
 
       

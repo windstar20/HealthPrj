@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import gc.product.entity.Product;
-import gc.product.service.ProductListService;
+import gc.entity.Product;
+import gc.service.ProductListService;
 
 
 @WebServlet("/admin/product/list")

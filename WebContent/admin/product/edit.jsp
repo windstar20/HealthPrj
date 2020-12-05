@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="gc.entity.Product" %>
+<%@ page import="gc.service.ProductListService" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -62,34 +66,34 @@
       <!--?=============== body 테이블 ===============-->
       <main id="main-section" class="main-section">
         <div class="main-title">
-            <h1>상품 등록</h1>
+            <h1>상품 수정</h1>
             <span> home > 상품관리 > 상품리스트 </span>
         </div>
-        	<form method="post" action="reg">
+        	<form action="edit" method="post" >
 	            <section id="main" class="main">
 	            <h1>상품 기본 정보</h1>
 	            <table class="product-basic-info product-table">
 	                <tr>
 	                    <th>상품명</th>
 	                    <td>
-	                        <input type="text" name="product-name" />
+	                        <input type="text" name="product-name" value="${p.productName}"/>
 	                    </td>
 	                </tr>
 	                <tr>
 	                    <th>제조사</th>
-	                    <td><input type="text" name="manufacture" ></td>
+	                    <td><input type="text" name="manufacture" value="${p.manufacturer}"></td>
 	                </tr>
 	                <tr>
 	                    <th>브랜드</th>
-	                    <td><input type="text" name="brand"></td>
+	                    <td><input type="text" name="brand" value="${p.brand}"></td>
 	                </tr>
 	                <tr>
 	                    <th>모델명</th>
-	                    <td><input type="text" name="model" ></td>
+	                    <td><input type="text" name="model" value="${p.productModel}"></td>
 	                </tr>
 	                <tr>
 	                    <th>상품분류</th>
-	                    <td><input type="text" name="category" ></td>
+	                    <td><input type="text" name="category" value="${p.category}" ></td>
 	                </tr>
 	                
 	               
@@ -100,13 +104,13 @@
 	                <tr>
 	                    <th>판매가</th>
 	                    <td>
-	                        <input type="text" name="price" /> 원                           
+	                        <input type="text" name="price" value="${p.price}"/> 원                           
 	                    </td>
 	                </tr>
 	                <tr>
 	                    <th>적립금</th>
 	                    <td>
-	                        <input type="text" name="save-point" />
+	                        <input type="text" name="save-point" value="${p.savePoint}"/>
 	                        <label> point</label>
 	                    </td>
 	                </tr>
@@ -148,19 +152,20 @@
 	                <tr>
 	                    <th>상품 간략설명</th>
 	                    <td>
-	                        <input type="text" name="summary-explain" />
+	                        <input type="text" name="summary-explain" value="${p.summaryExplain}"/>
 	                    </td>
 	                </tr>
 	                <tr>
 	                    <th>상세설명</th>
 	                    <td>
-	                       <textarea rows=10 name="detail-explain"></textarea>
+	                       <textarea rows=10 name="detail-explain" value="${p.detailExplain}"></textarea>
 	                    </td>
 	                </tr>
 	            </table>
-	            <div class="application">	                
-                        <a href="list">취소</a>         
-	                    <input type="submit" value="상품등록">        
+	            <div class="application">
+            		<input type="hidden" name="id" value="${p.id}" />		                
+                    <a href="list">취소</a>         
+                    <input type="submit" value="상품수정" />        
 	            </div>
 	           </section>
 	       </form>
